@@ -1,49 +1,23 @@
-PTManager and PTFeeder Installer for Linux
-This repository contains scripts to install and update PTManager and PTFeeder on Linux systems (tested with Ubuntu 22.04).
+PTFeeder and PTManager Installer Scripts
+This project contains a collection of Bash scripts for installing and managing PTFeeder and PTManager on your server. PTFeeder is an add-on for the ProfitTrailer trading bot that provides dynamic settings based on market conditions. PTManager is a web interface that allows you to manage your ProfitTrailer and PTFeeder instances.
 
-Features Included:
-PTManager Installation Requirements ✅
-PTManager Fresh Install + Config Guide ✅
-PTFeeder Installation Requirements ✅
-PTFeeder Fresh Install + Config Guide ✅
-Caddy Install + Config Guide for Auto SSL ✅
-PTManager + PTFeeder Updater ✅
+Requirements
+A server with a Unix-based operating system.
+Curl and wget installed.
+ProfitTrailer and PTManager licenses.
+Installation
+Clone the repository to your server: git clone <repository-url>
+Change into the directory of the cloned repository: cd <repository-name>
+Run the Index script: ./Index.sh
+Follow the instructions in the menu.
+Script Overview
+Index.sh: This is the main script that you should run. It displays a menu with various options, such as installing PTFeeder, installing PTManager, and running updates.
 
+PTFeederInstall.sh: This script installs PTFeeder on your server. It downloads the latest version of PTFeeder, unpacks the files, and copies them to the specified directory.
 
-Guide to Install PT Manager on Linux
-Open the terminal on your Linux system.
+PTFeederUpdate.sh: This script updates your PTFeeder installation to the latest version. It stops PTFeeder, downloads the latest version, replaces the old files, and restarts PTFeeder.
 
+start_PTManager.sh and stop_PTManager.sh: These scripts start and stop the PTManager service, respectively.
 
-Add the Profittrailer user:
-
-sudo adduser Profittrailer
-Grant sudo permissions:
-
-sudo usermod -aG sudo Profittrailer
-Note: You can also run as root user. In this case, you need to create the /home/Profittrailer directory yourself:
-
-
-mkdir /home/Profittrailer
-Change to the home directory by typing the following command and pressing Enter:
-
-
-cd /home/Profittrailer
-Clone this repository into your /home/Profittrailer directory:
-
-
-git clone https://github.com/Herb0002/PTInstall
-Change to the cloned directory:
-
-
-cd /home/Profittrailer/PTInstall
-Make the installation script executable by typing the following command and pressing Enter:
-
-
-chmod +x PTinstall.sh
-Run the installation/update script by typing the following command and pressing Enter:
-
-
-sudo ./PTinstall.sh
-Wait for the installation to complete. At the end of the script, you will receive a random key and the link to log in to PT Manager.
-
-Congratulations! You have successfully installed PT Manager on your Linux system.
+Help and Feedback
+If you need help or want to provide feedback, please open an issue in this repository or contact me at Discord - Herb0002

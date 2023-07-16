@@ -39,7 +39,7 @@ Switch to the profittrailer user's home directory:
 cd /home/profittrailer
 
 Download the latest version of the installation scripts from GitHub:
-https://github.com/Herb0002/PTInstall
+git clone https://github.com/Herb0002/PTInstall.git
 
 Make the main installation script (Index.sh) executable:
 chmod +x Index.sh

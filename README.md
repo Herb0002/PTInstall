@@ -41,6 +41,9 @@ cd /home/profittrailer
 Download the latest version of the installation scripts from GitHub, wie the git clone command:
 git clone https://github.com/Herb0002/PTInstall.git
 
+Note: The git clone command requires that git is installed on your system. If git is not installed, you can install it with the following command:
+sudo apt-get install git
+
 Make the main installation script (Index.sh) executable:
 chmod +x Index.sh
 

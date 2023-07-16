@@ -3,13 +3,8 @@ This project contains a collection of Bash scripts for installing and managing P
 
 Requirements
 A server with a Unix-based operating system.
-Curl and wget installed.
-ProfitTrailer and PTManager licenses.
-Installation
-Clone the repository to your server: git clone <repository-url>
-Change into the directory of the cloned repository: cd <repository-name>
-Run the Index script: ./Index.sh
-Follow the instructions in the menu.
+ProfitTrailer licenses.
+
 Script Overview
 Index.sh: This is the main script that you should run. It displays a menu with various options, such as installing PTFeeder, installing PTManager, and running updates.
 

@@ -38,7 +38,7 @@ Note: You can also run the installation as the root user, but this is not recomm
 Switch to the profittrailer user's home directory:
 cd /home/profittrailer
 
-Download the latest version of the installation scripts from GitHub:
+Download the latest version of the installation scripts from GitHub, wie the git clone command:
 git clone https://github.com/Herb0002/PTInstall.git
 
 Make the main installation script (Index.sh) executable:

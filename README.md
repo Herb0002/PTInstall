@@ -2,7 +2,7 @@ PTFeeder and PTManager Installer Scripts
 This project contains a collection of Bash scripts for installing and managing PTFeeder and PTManager on your server. PTFeeder is an add-on for the ProfitTrailer trading bot that provides dynamic settings based on market conditions. PTManager is a web interface that allows you to manage your ProfitTrailer and PTFeeder instances.
 
 Requirements
-A server with a Unix-based operating system.
+A server with a Unix-based operating system. ( i have tested it with ubuntu 22.04 )
 ProfitTrailer licenses.
 
 Script Overview

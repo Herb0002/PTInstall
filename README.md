@@ -48,7 +48,7 @@ Make the main installation script (Index.sh) executable:
 chmod +x Index.sh
 
 Run the installation/update script:
-sudo ./Index.sh
+./Index.sh
 
 Wait for the installation to complete. At the end of the script execution, you will receive a random key and a link to log in to PT Manager.
 

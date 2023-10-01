@@ -5,22 +5,6 @@ Requirements
 A server with a Unix-based operating system. ( i have tested it with ubuntu 22.04 )
 ProfitTrailer licenses.
 
-Script Overview
-Index.sh: This is the main script that you should run. It displays a menu with various options, such as installing PTFeeder, installing PTManager, and running updates.
-
-PTFeederInstall.sh: This script installs PTFeeder on your server. It downloads the latest version of PTFeeder, unpacks the files, and copies them to the specified directory.
-
-PTFeederUpdate.sh: This script updates your PTFeeder installation to the latest version. It stops PTFeeder, downloads the latest version, replaces the old files, and restarts PTFeeder.
-
-start_PTManager.sh and stop_PTManager.sh: These scripts start and stop the PTManager service, respectively.
-
-Help and Feedback
-If you need help or want to provide feedback, please open an issue in this repository or contact me at Discord - Herb0002
-
-
-
-
-
 Guide to Install PT Manager on Linux
 Open the terminal on your Linux system.
 
@@ -53,5 +37,7 @@ Run the installation/update script:
 ./Index.sh
 
 Wait for the installation to complete. At the end of the script execution, you will receive a random key and a link to log in to PT Manager.
+
+If you need help or want to provide feedback, please open an issue in this repository or contact me at Discord - Herb0002
 
 Congratulations! You have successfully installed PT Manager on your Linux system.

@@ -19,8 +19,8 @@ $new_domain {
 EOL"
 
 # 5. Update application.properties
-application_properties_path="/home/profittrailer/PTManager/ptmanager-$latest_version/application.properties"
 latest_version="$(cat /home/profittrailer/PTManager/version.txt)"
+application_properties_path="/home/profittrailer/PTManager/ptmanager-$latest_version/application.properties"
 sudo bash -c "sed -i 's/^server.caddy.domain=.*/server.caddy.domain=$new_domain/' $application_properties_path"
 
 # 6. Restart Caddy

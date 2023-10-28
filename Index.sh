@@ -1,7 +1,19 @@
 #!/bin/bash
 
 # Ensure all required scripts are executable
-for script in PTManager/update_PTManager.sh PTManager/install_PTManager.sh PTManager/configure_PTManager.sh PTManager/stop_PTManager.sh PTManager/start_PTManager.sh Caddy/install_caddy.sh PTFeeder/PTFeederUpdate.sh PTFeeder/PTFeederInstall.sh Requirements/PTF_install_required_software.sh Requirements/PTM_install_required_software.sh; do
+for script in \
+    PTManager/update_PTManager.sh \
+    PTManager/install_PTManager.sh \
+    PTManager/configure_PTManager.sh \
+    PTManager/stop_PTManager.sh \
+    PTManager/start_PTManager.sh \
+    Caddy/install_caddy.sh \
+    Caddy/edit_caddy.sh \
+    PTFeeder/PTFeederUpdate.sh \
+    PTFeeder/PTFeederInstall.sh \
+    Requirements/PTF_install_required_software.sh \
+    Requirements/PTM_install_required_software.sh
+do
     if [[ -f $script && ! -x $script ]]; then
         sudo chmod +x $script
     fi
@@ -13,7 +25,8 @@ echo "2. Update PTManager"
 echo "3. Install PTFeeder"
 echo "4. Update PTFeeder"
 echo "5. Install Caddy"
-read -p "Enter your choices (separated by spaces, e.g. '1 2 3 4 5'): " choices
+echo "6. Edit Caddy"
+read -p "Enter your choices (separated by spaces, e.g. '1 2 3 4 5 6'): " choices
 
 install_caddy=false
 install_ptmanager=false
@@ -47,8 +60,12 @@ for choice in $choices; do
             ./Caddy/install_caddy.sh
             install_caddy=true
             ;;
+        6)
+            # Edit Caddy
+            ./Caddy/edit_caddy.sh
+            ;;
         *)
-            echo "Invalid choice. Please enter 1, 2, 3, 4, or 5."
+            echo "Invalid choice. Please enter 1, 2, 3, 4, 5, or 6."
             ;;
     esac
 done
